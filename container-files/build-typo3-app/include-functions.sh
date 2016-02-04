@@ -321,7 +321,7 @@ function neos_site_package_install() {
     log "Skipping installing site package (T3APP_NEOS_SITE_PACKAGE is set to FALSE)."
   else
     log "Installing $site_package_name site package..."
-    ./flow site:import --packageKey $site_package_name
+    ./flow site:import --package-key $site_package_name
   fi
 }
 
